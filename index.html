@@ -5,10 +5,30 @@
   <title>Rounak Dhadiwal | Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script defer src="/xploiterd/scripts.js"></script>
+  <style>
+    .typing {
+      border-right: 2px solid #00bcd4;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: typing 4s steps(30, end), blink .75s step-end infinite;
+    }
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    @keyframes blink {
+      from, to { border-color: transparent }
+      50% { border-color: #00bcd4; }
+    }
+    .glass {
+      background: rgba(22, 27, 34, 0.7);
+      backdrop-filter: blur(10px);
+    }
+  </style>
 </head>
 <body class="bg-[#0d1117] text-gray-200 font-sans">
   <!-- Navbar -->
-  <nav class="flex justify-between items-center px-6 py-4 bg-[#161b22] shadow-md sticky top-0 z-50">
+  <nav class="flex justify-between items-center px-6 py-4 bg-[#161b22]/90 shadow-md sticky top-0 z-50 backdrop-blur">
     <h1 class="text-xl font-bold text-cyan-400">Rounak Dhadiwal</h1>
     <div class="space-x-6">
       <a href="/xploiterd/index.html" class="hover:text-cyan-400">Home</a>
@@ -18,43 +38,75 @@
   </nav>
 
   <!-- Hero Section -->
-  <section class="flex flex-col items-center justify-center h-[80vh] text-center px-6">
-    <h2 class="text-5xl font-extrabold mb-4 tracking-wide">
-      Hi, I’m <span class="text-cyan-400">Rounak Dhadiwal</span>
-    </h2>
-    <p class="mb-6 text-lg max-w-2xl">
-      Senior Security Engineer @ ZS • OSWE • eWPTXv2 • CRTP • AWS CCP  
-    </p>
-    <div class="flex space-x-6 mb-8">
-      <a href="https://github.com/Rounak999" target="_blank" class="text-cyan-400 hover:underline">GitHub</a>
-      <a href="https://www.linkedin.com/in/xploiterd/" target="_blank" class="text-cyan-400 hover:underline">LinkedIn</a>
-      <a href="https://medium.com/@xploiterd" target="_blank" class="text-cyan-400 hover:underline">Medium</a>
+  <section class="grid md:grid-cols-2 gap-8 items-center h-[85vh] px-8">
+    <div class="space-y-6 text-center md:text-left">
+      <h2 class="text-5xl font-extrabold tracking-wide">
+        Hi, I’m <span class="text-cyan-400">Rounak Dhadiwal</span>
+      </h2>
+      <p class="typing text-lg font-mono">
+        Senior Security Engineer @ ZS | OSWE | eWPTXv2 | CRTP | AWS CCP
+      </p>
+      <div class="flex space-x-6 justify-center md:justify-start">
+        <a href="https://github.com/Rounak999" target="_blank" class="text-cyan-400 hover:underline">GitHub</a>
+        <a href="https://www.linkedin.com/in/xploiterd/" target="_blank" class="text-cyan-400 hover:underline">LinkedIn</a>
+        <a href="https://medium.com/@xploiterd" target="_blank" class="text-cyan-400 hover:underline">Medium</a>
+      </div>
+      <a href="/xploiterd/resume.html" class="bg-cyan-500 text-black px-6 py-3 rounded-lg shadow-lg hover:bg-cyan-400 transition inline-block">
+        View My Resume
+      </a>
     </div>
-    <a href="/xploiterd/resume.html" class="bg-cyan-500 text-black px-6 py-3 rounded-lg shadow-lg hover:bg-cyan-400 transition">
-      View My Resume
-    </a>
+    <div class="hidden md:block">
+      <img src="https://i.imgur.com/8Km9tLL.png" alt="Hacker Illustration" class="rounded-2xl shadow-lg border border-cyan-500/20">
+    </div>
   </section>
 
+  <!-- Divider -->
+  <div class="h-1 bg-gradient-to-r from-cyan-500 to-blue-600"></div>
+
   <!-- Certifications -->
-  <section class="px-6 py-12 max-w-4xl mx-auto text-center">
-    <h3 class="text-3xl font-bold mb-6">Certifications</h3>
-    <div class="flex flex-wrap justify-center gap-4">
-      <span class="px-4 py-2 bg-[#161b22] rounded-lg shadow hover:shadow-cyan-500/40">OSWE</span>
-      <span class="px-4 py-2 bg-[#161b22] rounded-lg shadow hover:shadow-cyan-500/40">eWPTXv2</span>
-      <span class="px-4 py-2 bg-[#161b22] rounded-lg shadow hover:shadow-cyan-500/40">CRTP</span>
-      <span class="px-4 py-2 bg-[#161b22] rounded-lg shadow hover:shadow-cyan-500/40">AWS CCP</span>
+  <section class="px-6 py-16 max-w-5xl mx-auto text-center">
+    <h3 class="text-3xl font-bold mb-8">🎓 Certifications</h3>
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- OSWE -->
+      <a href="https://www.credential.net/76816de4-d6fd-41f3-a0e1-9e999cd75873#acc.hC3qfbma" target="_blank"
+         class="glass p-6 rounded-xl shadow-lg hover:shadow-cyan-500/40 transition block">
+        <h4 class="text-xl font-bold text-cyan-400 mb-2">OSWE</h4>
+        <p class="text-gray-400 text-sm">Offensive Security Web Expert</p>
+      </a>
+      <!-- eWPTXv2 -->
+      <a href="https://www.credential.net/297a6757-d9fc-4b92-9486-9e0888126c57#acc.Htg2r0d8" target="_blank"
+         class="glass p-6 rounded-xl shadow-lg hover:shadow-cyan-500/40 transition block">
+        <h4 class="text-xl font-bold text-cyan-400 mb-2">eWPTXv2</h4>
+        <p class="text-gray-400 text-sm">Web App Penetration Tester Extreme</p>
+      </a>
+      <!-- CRTP -->
+      <a href="https://www.credential.net/8cca9045-0538-4594-b3cb-e59a91ad4f22#acc.Or31zKpk" target="_blank"
+         class="glass p-6 rounded-xl shadow-lg hover:shadow-cyan-500/40 transition block">
+        <h4 class="text-xl font-bold text-cyan-400 mb-2">CRTP</h4>
+        <p class="text-gray-400 text-sm">Certified Red Team Professional</p>
+      </a>
+      <!-- AWS CCP -->
+      <div class="glass p-6 rounded-xl shadow-lg hover:shadow-cyan-500/40 transition">
+        <h4 class="text-xl font-bold text-cyan-400 mb-2">AWS CCP</h4>
+        <p class="text-gray-400 text-sm">AWS Cloud Practitioner</p>
+      </div>
     </div>
   </section>
 
   <!-- Projects Highlight -->
-  <section class="px-6 py-12 max-w-6xl mx-auto">
-    <h3 class="text-3xl font-bold mb-6 text-center">Featured Projects</h3>
-    <div id="projects" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  <section class="px-6 py-16 max-w-6xl mx-auto">
+    <h3 class="text-3xl font-bold mb-8 text-center">💻 Featured Projects</h3>
+    <div id="projects" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-[#161b22] text-center py-6 mt-12">
-    <p class="text-gray-400">© 2025 Rounak Dhadiwal • Built with ❤️ on GitHub Pages</p>
-  </footer>
+  <!-- Blogs Preview -->
+  <section class="px-6 py-16 max-w-6xl mx-auto">
+    <h3 class="text-3xl font-bold mb-8 text-center">📝 Latest Blogs</h3>
+    <div id="latestBlogs" class="grid md:grid-cols-2 gap-8"></div>
+    <div class="text-center mt-6">
+      <a href="/xploiterd/blogs.html" class="bg-cyan-500 text-black px-6 py-3 rounded-lg shadow-lg hover:bg-cyan-400 transition">View All</a>
+    </div>
+  </section>
+
 </body>
 </html>
