@@ -8,33 +8,41 @@ const tabGithub = document.getElementById("tabGithub");
 // Load Medium blogs
 async function loadMedium() {
   content.innerHTML = "<p>Loading Medium blogs...</p>";
-  const res = await fetch(mediumFeed);
-  const data = await res.json();
-  content.innerHTML = "";
-  data.items.slice(0, 5).forEach(post => {
-    content.innerHTML += `
-      <div class="bg-[#161b22] p-4 rounded shadow">
-        <h3 class="text-xl font-bold mb-2"><a href="${post.link}" target="_blank" class="text-cyan-400 hover:underline">${post.title}</a></h3>
-        <p class="text-gray-400">${new Date(post.pubDate).toDateString()}</p>
-      </div>
-    `;
-  });
+  try {
+    const res = await fetch(mediumFeed);
+    const data = await res.json();
+    content.innerHTML = "";
+    data.items.slice(0, 5).forEach(post => {
+      content.innerHTML += `
+        <div class="bg-[#161b22] p-4 rounded shadow">
+          <h3 class="text-xl font-bold mb-2"><a href="${post.link}" target="_blank" class="text-cyan-400 hover:underline">${post.title}</a></h3>
+          <p class="text-gray-400">${new Date(post.pubDate).toDateString()}</p>
+        </div>
+      `;
+    });
+  } catch (err) {
+    content.innerHTML = "<p>Failed to load Medium posts.</p>";
+  }
 }
 
 // Load GitHub repos
 async function loadGithub() {
   content.innerHTML = "<p>Loading GitHub repos...</p>";
-  const res = await fetch(githubApi);
-  const repos = await res.json();
-  content.innerHTML = "";
-  repos.forEach(repo => {
-    content.innerHTML += `
-      <div class="bg-[#161b22] p-4 rounded shadow">
-        <h3 class="text-xl font-bold mb-2"><a href="${repo.html_url}" target="_blank" class="text-cyan-400 hover:underline">${repo.name}</a></h3>
-        <p class="text-gray-400">${repo.description || "No description"}</p>
-      </div>
-    `;
-  });
+  try {
+    const res = await fetch(githubApi);
+    const repos = await res.json();
+    content.innerHTML = "";
+    repos.forEach(repo => {
+      content.innerHTML += `
+        <div class="bg-[#161b22] p-4 rounded shadow">
+          <h3 class="text-xl font-bold mb-2"><a href="${repo.html_url}" target="_blank" class="text-cyan-400 hover:underline">${repo.name}</a></h3>
+          <p class="text-gray-400">${repo.description || "No description"}</p>
+        </div>
+      `;
+    });
+  } catch (err) {
+    content.innerHTML = "<p>Failed to load GitHub repos.</p>";
+  }
 }
 
 // Tab switching
