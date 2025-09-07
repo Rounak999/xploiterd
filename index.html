@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xploiter_d Portfolio</title>
+
+  <!--
+    - favicon
+  --> 
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/png">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Rounak Dhadiwal" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Rounak Dhadiwal">Rounak Dhadiwal</h1>
+
+          <p class="title">Security Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:rounak@dhadiwal.com" class="contact-link">rounak@dhadiwal.com</a>
+            </div>
+
+          </li>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1997-07-13">July 13, 1997</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Pune, Maharashtra, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/xploiterd/" class="social-link" target="_blank" rel="noopener">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/Rounak999" class="social-link" target="_blank" rel="noopener">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://medium.com/@xploiterd" class="social-link" target="_blank" rel="noopener">
+              <ion-icon name="logo-medium"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>Vulnerable Labs</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Hi, I’m Rounak Dhadiwal, a Senior Security Engineer with over six years of experience in application security, penetration testing, source code review and product security. I specialize in web and API security, cloud security audits on AWS, and threat modeling, helping organizations strengthen their products from design to deployment.
+          </p>
+
+          <p>
+            My work has spanned from performing manual and automated vulnerability assessments for critical applications to integrating SAST and SCA tools into CI/CD pipelines to secure the software supply chain. Along the way, I’ve reported high-impact vulnerabilities to the leading bug bounty programs and Government of India, while also creating and delivering CTF challenges, trainings, and workshops to upskill teams and foster security awareness.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/vaptlogo.svg" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Vulnerability Assessment and Penetration Testing</h4>
+
+                <p class="service-item-text">
+                  Manual and automated vulnerability assessment and penetration testing of web applications, APIs.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/sourcecodelogo.svg" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Source Code Review</h4>
+
+                <p class="service-item-text">
+                  Manual source code review to identify security vulnerabilities in the application.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/cloudlogo.svg" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">AWS cloud Auditing</h4>
+
+                <p class="service-item-text">
+                  Auditing AWS cloud infrastructure for security misconfigurations and vulnerabilities.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/ctflogo.svg" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Creating CTF's</h4>
+
+                <p class="service-item-text">
+                  Creating CTF challenges and workshops to upskill teams and foster security awareness.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients 
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Certifications</h3>
+          <br>
+
+          <ul class="certificates-grid">
+            <li class="service-item">
+              <a href="https://www.credential.net/76816de4-d6fd-41f3-a0e1-9e999cd75873#acc.rmQv6ghO" target="_blank" rel="noopener">
+                <img src="./assets/images/oswelogo.png" alt="OSWE" />
+              </a>
+            </li>
+            <li class="service-item">
+              <a href="https://www.credential.net/11415090-95fb-417c-a41b-4d98e7cdd913#acc.M3qzPswa" target="_blank" rel="noopener">
+                <img src="./assets/images/irisk.png" alt="IRISK" />
+              </a>
+            </li>
+            <li class="service-item">
+              <a href="https://www.credential.net/297a6757-d9fc-4b92-9486-9e0888126c57#acc.s8QSzyVZ" target="_blank" rel="noopener">
+                <img src="./assets/images/ewptxlogo.png" alt="EWPTX" />
+              </a>
+            </li>
+            <li class="service-item">
+              <a href="https://www.credential.net/e8e9ac11-1b03-488c-948a-5ae0eac11b5d#acc.cQKRovl1" target="_blank" rel="noopener">
+                <img src="./assets/images/ewptlogo.png" alt="EWPT" />
+              </a>
+            </li>
+            <li class="service-item">
+              <a href="https://pentesterlab.com/certs/a0e1697bbc35e67e5cab4f01059216b2" target="_blank" rel="noopener">
+                <img src="./assets/images/pentesterlogo.png" alt="PentesterLab" />
+              </a>
+            </li>
+            <li class="service-item">
+              <a href="https://www.credly.com/badges/baf4f6f2-029a-4711-936e-5fe40fcad123l" target="_blank" rel="noopener">
+                <img src="./assets/images/awslogo.png" alt="AWS" />
+              </a>
+            </li>
+            <li class="service-item">
+              <a href="https://www.credential.net/8cca9045-0538-4594-b3cb-e59a91ad4f22#acc.EbqwCcNj" target="_blank" rel="noopener">
+                <img src="./assets/images/crtplogo.png" alt="CRTP" />
+              </a>
+            </li>
+            <li class="service-item">
+              <a href="./assets/images/ccspaws.pdf" target="_blank" rel="noopener">
+                <img src="./assets/images/secopslogo.png" alt="CCSP-AWS" />
+              </a>
+            </li>
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume
+            <a href="ROUNAK RESUME.pdf" download class="resume-download-btn">
+            <ion-icon name="download-outline"></ion-icon>
+          </a></h2>
+          
+        </header>
+
+        <!-- Move Experience above Education -->
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Senior Security Engineer | ZS Associates</h4>
+              <span>April 2023 – Present</span>
+              <p class="timeline-text">
+                • Conducted manual Web Application Vulnerability Assessments and API Penetration Testing for the ZAIDYN product, identifying and mitigating security risks using tools such as Burp Suite.<br>
+                • Established and automated Software Composition Analysis (SCA) processes using Dependency Track, integrating security checks seamlessly into the CI/CD pipeline to enhance software supply chain security.<br>
+                • Performed manual source code reviews to identify vulnerabilities and implemented automated security scanning using Coverity, ensuring continuous security validation within the CI/CD workflow.<br>
+                • Led Threat Modeling and Security Analysis initiatives for applications, proactively identifying potential attack vectors and strengthening the security posture from the early development phases.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Vulnerability Analyst 1 | Mastercard Technology Pvt. Ltd</h4>
+              <span>September 2021 – April 2023</span>
+              <p class="timeline-text">
+                • Responsible for performing manual Web Application Vulnerability Assessment, API Pentesting, and Network Pentesting.<br>
+                • Conducted internal workshops and created CTF’s related to AWS Cloud Security.<br>
+                • Manual and automated testing using tools like Nessus, Nmap, BurpSuite, and AppScan.<br>
+                • Responsible for updating and reviewing Android application PT methodology and process.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Security Analyst | Net-Square Solutions Pvt. Ltd</h4>
+              <span>January 2020 – August 2021</span>
+              <p class="timeline-text">
+                • Responsible for Performing Vulnerability Assessment and Communicating findings to both business and developers.<br>
+                • Performed Internal Audits for Top Indian and International Banking Firms.<br>
+                • Manual and automated Web Application Testing.<br>
+                • Conducted internal workshops and created CTFs related to AWS Cloud Security.<br>
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Security Consultant | HackersEra Cyber Security Consultancy and Training Pvt. Ltd</h4>
+              <span>June 2019 – January 2021</span>
+              <p class="timeline-text">
+                • Activities related to Vulnerability Assessment and Penetration Testing.<br>
+                • Trained various Corporate Employees and Students.<br>
+                • Conducted Workshops in 20+ Engineering Colleges.
+              </p>
+            </li>
+
+          </ol>
+        </section>
+
+        <!-- Achievements Section -->
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="trophy-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Achievements</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+               <a href="https://bugcrowd.com/h/XploiteR_D" target="_blank" rel="noopener">600+ points on Bug Bounty Platform Bugcrowd</a> 
+              </h4>
+              
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                <a href="https://helpx.adobe.com/security/acknowledgements.html" target="_blank" rel="noopener">Adobe Hall of Fame</a>
+              </h4>
+              
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                <a href="https://cert.europa.eu/hall-of-fame" target="_blank" rel="noopener">Cert Europa Hall of Fame</a>
+              </h4>
+              
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                <a href="https://unite.un.org/en/ict-security/hall-fame" target="_blank" rel="noopener">United Nations Hall of Fame</a>
+              </h4>
+              
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                <a href="https://www.linkedin.com/feed/update/urn:li:activity:6405069232375201792/" target="_blank" rel="noopener">ING Bank Bounty</a>
+              </h4>
+              
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+
+  <div class="title-wrapper">
+    <div class="icon-box">
+      <ion-icon name="school-outline"></ion-icon>
+    </div>
+    <h3 class="h3">Education</h3>
+  </div>
+
+  <ol class="timeline-list">
+
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">Bachlor of Engineering – Infomration Technology</h4>
+      <span>Sinhgad College of Engineering, Pune</span>
+       <p class="timeline-text">
+                • CGPA: 7.27. TIME: 2015 - 2019<br>
+              </p>
+    </li>
+
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">H.S.C</h4>
+      <span>Dr. B.G Dere Junior College, Sangamner</span>
+      <p class="timeline-text">
+                • PERCANTAGE: 77.69%. TIME: 2014 - 2015<br>
+              </p>
+    </li>
+
+  </ol>
+</section>
+
+        <section class="skill">
+          <h3 class="h3 skills-title">My skills</h3>
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web Application and API Vulnerability Assessment</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Source Code Review</h5>
+                <data value="75">75%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">SAST and SCA Automation</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">AWS Cloud Auditing and Red Teaming</h5>
+                <data value="60">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">BurpSuite</h5>
+                <data value="85">85%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">OWASP Top 10</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Network Pentest</h5>
+                <data value="60">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Android Pentest</h5>
+                <data value="60">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+    -->
+
+      <article class="portfolio" data-page="vulnerable labs">
+
+        <header>
+          <h2 class="h2 article-title">Vulnerable Labs</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+
+            </button>
+
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active">
+              <a href="https://github.com/Rounak999/AuthKing" target="_blank" rel="noopener">
+
+                <figure class="project-img">
+            
+
+                  <img src="./assets/images/authking.png" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Auth King</h3>
+
+                <p class="project-category">SQL Injection and Authentication Bypass</p>
+
+              </a>
+            </li>
+
+             <li class="project-item  active">
+              <a href="https://github.com/Rounak999/lottery_app" target="_blank" rel="noopener">
+
+                <figure class="project-img">
+            
+
+                  <img src="./assets/images/lottery.png" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Lottery App</h3>
+
+                <p class="project-category">Random Token bypass</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active">
+              <a href="https://github.com/Rounak999/TheCalc" target="_blank" rel="noopener">
+
+                <figure class="project-img">
+            
+
+                  <img src="./assets/images/calc.png" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">The Calc</h3>
+
+                <p class="project-category">Python Code Execution</p>
+
+              </a>
+            </li>
+
+            
+            <li class="project-item  active">
+              <a href="https://github.com/Rounak999/Emiily" target="_blank" rel="noopener">
+
+                <figure class="project-img">
+            
+
+                  <img src="./assets/images/jinja.png" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Emiily</h3>
+
+                <p class="project-category">Server Side Template Injection</p>
+
+              </a>
+            </li>
+
+            
+            <li class="project-item  active">
+              <a href="https://github.com/Rounak999/Lover" target="_blank" rel="noopener">
+
+                <figure class="project-img">
+            
+
+                  <img src="./assets/images/lover.png" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Lover</h3>
+
+                <p class="project-category">Prototype Pollution</p>
+
+              </a>
+            </li>
+
+            
+            <li class="project-item  active">
+              <a href="https://github.com/Rounak999/Expression" target="_blank" rel="noopener">
+
+                <figure class="project-img">
+            
+
+                  <img src="./assets/images/expression.png" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Expression</h3>
+
+                <p class="project-category">PHP code execution</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active">
+              <a href="https://github.com/Rounak999/secureme" target="_blank" rel="noopener">
+
+                <figure class="project-img">
+            
+
+                  <img src="./assets/images/secureme.png" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Secure Me</h3>
+
+                <p class="project-category">XSS and CSRF</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active">
+              <a href="https://github.com/Rounak999/tokenbypass" target="_blank" rel="noopener">
+
+                <figure class="project-img">
+            
+
+                  <img src="./assets/images/tokenbypass.png" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Token Bypass</h3>
+
+                <p class="project-category">Insecure CORS</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active">
+              <a href="https://github.com/Rounak999/Movieapp" target="_blank" rel="noopener">
+
+                <figure class="project-img">
+            
+
+                  <img src="./assets/images/movieapp.png" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Movie App</h3>
+
+                <p class="project-category">Multiple vulnerabilities</p>
+
+              </a>
+            </li>
+           
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@xploiterd/nonce-upon-a-time-a-small-misconfiguration-to-account-takeover-a29a6baf1d18" target="_blank" rel="noopener">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/CSP-1.png" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Web Security</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2025-08-04">Aug 04, 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Nonce Upon a Time: A Small Misconfiguration to Account Takeover</h3>
+
+                  <p class="blog-text">
+                    Misconfiguration in Content Security Policy (CSP), that completely bypassed the CSRF check and led to an account takeover
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@xploiterd/finding-and-exploiting-iam-role-in-amazon-ecs-fargate-5fa5166988b7">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/AWS-1.png" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">AWS Security</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024-04-06">April 06, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Finding and Exploiting IAM Role in Amazon ECS Fargate</h3>
+
+                  <p class="blog-text">
+                     Exploiting IAM roles in Amazon Elastic Container Service (ECS) Fargate.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@xploiterd/ec2-user-data-to-rce-f601264a75c2">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/AWS-2.png" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">AWS Security</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2023-10-29">October 29, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">EC2 User-data to RCE</h3>
+
+                  <p class="blog-text">
+                   How AWS misconfiguration can lead to remote code execution on an EC2 instance.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@xploiterd/stored-iframe-injection-csrf-account-takeover-42c93ad13f5d">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/IFRAME-1.png" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Web Security</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2019-12-16">December 16, 2019</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Stored Iframe Injection + CSRF = Account Takeover </h3>
+
+                  <p class="blog-text">
+                    How a stored iframe injection vulnerability combined with CSRF can lead to an account takeover.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@xploiterd/how-to-perform-and-exploit-cross-site-request-forgery-csrf-attacks-1764c0f23585">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/CSRF-1.png" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Web Security</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2018-09-10">September 10, 2018</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">HOW TO PERFORM AND EXPLOIT CROSS SITE REQUEST FORGERY (CSRF) ATTACKS</h3>
+
+                  <p class="blog-text">
+                    Cross-Site Request Forgery (CSRF) is an attack that forces an end user to execute unwanted actions on a web application in which they’re currently authenticated
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+     
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
